@@ -1,0 +1,17 @@
+{% extends 'salute_artist/base.html' %}
+{% load static %}
+
+
+{% block titulo %}
+    <h1></h1>
+{% endblock titulo %}
+
+
+{% block contenido %}     
+    <h2> Buscar musico </h2>
+    <form action="buscar2/" method="get">
+        {% csrf_token %}
+        <p>Buscar: <input type="text" name="buscar" id="buscar"></p>
+        <input type="submit" value="Siguiente">
+    </form>
+{% endblock contenido %}

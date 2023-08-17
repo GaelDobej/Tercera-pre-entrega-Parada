@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Salute e Vita - Art for everyone</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'salute_basic/css/styles.css'  %}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <!-- Header-->
+        <header class="masthead d-flex align-items-center">
+            <div class="container px-4 px-lg-5 text-center">
+                <h1 class="mb-1">Salute e Vita</h1>
+                {% block titulo %}
+                    
+                {% endblock titulo %}
+                <h3 class="mb-5"><em>G.Parada pre-entrega N°3</em></h3>
+                <a class="btn btn-primary btn-xl" href="#about">Artistas</a>
+                <a class="btn btn-primary btn-xl" href="#ventas">Ventas</a>
+                <a class="btn btn-primary btn-xl" href="#portfolio">Autor</a>
+            </div>
+        </header>
+        
+        
+        {% block separador %}
+
+        {% endblock separador %}
+    
+        <!-- About-->
+        <section class="content-section bg-light" id="about">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h2>Artistas</h2>
+                        <a class="btn btn-primary btn-xl" href="{% url 'salute_artist:pintor' %}">Pintores</a>
+                        <a class="btn btn-primary btn-xl" href="{% url 'salute_artist:escritor' %}">Escritores</a>
+                        <a class="btn btn-primary btn-xl" href="{% url 'salute_artist:musico' %}">Musicos</a>
+                        <p class="lead mb-5">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {% block separador2 %}
+            
+        {% endblock separador2 %}   
+        
+        <!-- Autor-->
+        <section class="content-section" id="portfolio">
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="mx-auto mb-3">
+                    Gael Dobej
+                    <em></em>
+                </h2>
+                <h2 class="mx-auto mb-2">
+                    
+                    <em>Portfolio</em>
+                </h2>
+                <a class="btn btn-primary btn-xl" href="https://linktr.ee/gael_dobej?utm_source=linktree_profile_share&ltsid=a7d8fc4c-3023-4a4a-a077-123f3b455e2e">Linktree</a>
+            </div>
+        </section>
+
+        {% block separador3 %}
+            
+        {% endblock separador3 %}
+        
+        <!-- About-->
+        <section class="content-section bg-light" id="ventas">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                            <div class="container px-4 px-lg-5">
+                                <div class="content-section-heading">
+                                    <h1 class="text-secondary mb-5">Ventas en proceso...</h1>
+                        </p>
+                     </div>
+                </div>
+                </div>
+        </section>
+
+        <!-- ITSATRAP-->
+        <section class="content-section bg-primary text-white">
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="mb-4">It's A Trap!</h2>
+                <a class="btn btn-xl btn-light me-4" href="https://www.youtube.com/watch?v=4F4qzPbcFiA">Click Me!</a>
+                <a class="btn btn-xl btn-dark" href="https://www.youtube.com/watch?v=4F4qzPbcFiA">Look at Me!</a>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container px-4 px-lg-5">
+                <ul class="list-inline mb-5">
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-instagram"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
+                    </li>
+                </ul>
+                <p class="text-muted small mb-0">G.Parada pre-entrega N°3</p>
+            </div>
+        </footer>
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'salute_basic/js/scripts.js'  %}"></script>
+    </body>
+</html>
